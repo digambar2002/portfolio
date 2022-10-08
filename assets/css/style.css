@@ -37,6 +37,7 @@
 ::before,
 ::after {
     box-sizing: border-box;
+
 }
 
 /* Global Settings Ends*/
@@ -625,6 +626,7 @@ li {
     color: none;
     -webkit-text-stroke: 1px #5af5ff;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .info {
@@ -787,11 +789,14 @@ li {
     }
 
     .dp-arc-inner {
-        left: 52px;
+        left: 40px !important;
+        top: -6px !important;
+        width: 65% !important;
+        height: 105% !important;
     }
 
     .dp-arc-outer {
-        left: 34px;
+        left: 25px !important;
     }
 
     .about-img {
@@ -812,12 +817,21 @@ li {
     .social-icons {
         text-align: center;
     }
-    .submit-btn{
+
+    .submit-btn {
         text-align: center;
     }
 
-    #MainCard{
+    #MainCard {
         height: 80vh !important;
+    }
+
+    .sciheading {
+        margin-top: 20px;
+        font-size: 20px !important;
+    }
+    .img-border{
+        border-radius: 0px 50px 0px 50px;
     }
 
 }

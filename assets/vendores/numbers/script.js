@@ -2,8 +2,8 @@ import * as datGui from "https://cdn.skypack.dev/dat.gui@0.7.7";
 
 const state = {
   fps: 20,
-  color: "#0000ff",
-  charset: "01"
+  color: "#08d308",
+  charset: "01HACKER"
 };
 
 const gui = new datGui.GUI();
