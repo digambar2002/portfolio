@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS only -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendores/numbers/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Cards -->
+    <link rel="stylesheet" href="assets/vendores/cards/style.css">
+
+</head>
+
+<body>
+
+
+    <div id="loader">
+        <div id="shadow"></div>
+        <div id="box"></div>
+    </div>
+
+    <!-- <canvas id="c"></canvas> -->
+
+    <div class="main" id="main" hidden>
+        <canvas id="canvas" class="animate__animated animate__fadeIn"></canvas>
+        <div class="container-fluid">
+            <div class="mask mask-custom">
+
+                <div class="container">
+
+                    <div class="row id-card mt-4 mycard animate__animated animate__zoomIn  align-items-center  justify-content-center"
+                        style="height: 90vh;">
+
+
+                        <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+                            <div class="carousel-inner">
+
+                                <!-- Home -->
+                                <div class="carousel-item active">
+                                    <section class="slide1 Home  animate__animated" id="Home">
+                                        <div class="col-12">
+
+                                            <div class="id-card-wrapper ">
+                                                <div>
+                                                    <div
+                                                        class="profile-row row d-flex justify-content-between align-items-center">
+
+                                                        <div class="col-md-6 col-sm-12 order-2 order-md-1">
+                                                            <div
+                                                                class="desc d-flex justify-content-center align-items-center">
+                                                                <div class="ml-4 info-contain">
+                                                                    <p class="text-light">Hello, I'm</p>
+                                                                    <h1 class="text-light">Digambar Chaudhari</h1>
+                                                                    <h2 class="mt-4"><span is="type-async"
+                                                                            id="type-text"></span>
+                                                                        <span class="blinking-cursor">_</span>
+                                                                    </h2>
+                                                                    <div>
+                                                                        <button data-mdb-target="#carouselExampleTouch"
+                                                                            data-mdb-slide-to="1" aria-label="Slide 2"
+                                                                            onclick="Display('AboutBtn','2')"
+                                                                            class="btn btn-glow mt-2">About
+                                                                            Me</button>
+                                                                        &nbsp;
+                                                                        <button data-mdb-target="#carouselExampleTouch"
+                                                                            data-mdb-slide-to="2" aria-label="Slide 3"
+                                                                            onclick="Display('WorkBtn', '3')"
+                                                                            class="btn btn-glow mt-2">Portfolio</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-sm-12 order-1 order-md-2">
+
+                                                            <div class="dp d-flex justify-content-center">
+                                                                <div class="dp-arc-outer"></div>
+                                                                <div class="dp-arc-inner"></div>
+                                                                <img class="ripple" src="assets/img/resume.png">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </section>
+                                </div>
+
+                                <!-- About us -->
+                                <div class="carousel-item">
+                                    <section id="about" class="slide2 about-section sec-padding  animate__animated">
+                                        <div class="row">
+                                            <div class="section-title">
+                                                <h1 class="text-center">about me</h1>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-12 order-2 order-md-1">
+                                                <div class="about-img">
+                                                    <div class="img-box">
+                                                        <img src="assets/img/about.png" alt="about-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 order-1 order-md-2  about-text custom-scroll"
+                                                id="style-4"
+                                                style="overflow-y:scroll; overflow-x:hidden; height:460px;">
+                                                <p>I’m a Fullstack Developer located in Jalgaon. I have a serious
+                                                    passion for UI
+                                                    effects, animations and
+                                                    creating intuitive, dynamic user experiences.
+                                                </p>
+
+                                                <h3>skills</h3>
+                                                <div class="skills">
+                                                    <div class="skill-item ripple">html</div>
+                                                    <div class="skill-item ripple">css</div>
+                                                    <div class="skill-item ripple">javascript</div>
+                                                    <div class="skill-item ripple">python</div>
+                                                    <div class="skill-item ripple">c</div>
+                                                    <div class="skill-item ripple">c++</div>
+                                                    <div class="skill-item ripple">php</div>
+                                                    <div class="skill-item ripple">java</div>
+                                                    <div class="skill-item ripple">flutter</div>
+                                                    <div class="skill-item ripple">android</div>
+                                                </div>
+
+
+                                                <!-- Education & Exeperiance tab Start -->
+                                                <div class="about-tabs">
+                                                    <button type="button" class="tab-item active"
+                                                        data-target="#education">education</button>
+                                                    <button type="button" class="tab-item"
+                                                        data-target="#experience">experience</button>
+                                                </div>
+                                                <!-- Education & Exeperiance tab Start -->
+
+                                                <!-- Education Start -->
+                                                <div class="tab-content active" id="education">
+                                                    <div class="timeline">
+                                                        <div class="timeline-item">
+                                                            <span class="date">12/2021 -present</span>
+                                                            <h4>bachelor of engineering - <span>SSBT's COET</span></h4>
+                                                            <p>Currently I am, pursuing BE from Kavayitri Bahinabai
+                                                                Chaudhari North
+                                                                Maharashtra University, (Jalgaon) my
+                                                                recent CGPA is <strong>9.25</strong> in summer 2022 exam
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="timeline-item">
+                                                            <span class="date">08/2018 - 05/2021</span>
+                                                            <h4>Diploma - <span>SSP Institute of technology</span></h4>
+                                                            <p>I have done my diploma in computer engineering from
+                                                                Maharashtra State
+                                                                Board of Technical Education,
+                                                                (Mumbai) with <strong>92.51</strong> percent</p>
+                                                        </div>
+                                                        <div class="timeline-item">
+                                                            <span class="date">07/2012 - 05/2018</span>
+                                                            <h4>SSC - <span>Nutan Dnyan Mandir</span></h4>
+                                                            <p>I have completed my <span>SSC</span> from Maharashtra
+                                                                State Board of
+                                                                Secondary and Higher Secondary
+                                                                Education, (Pune) with <strong>87.20</strong> percent
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Education End -->
+
+                                                <!-- Experience Start -->
+
+                                                <div class="tab-content" id="experience">
+                                                    <div class="timeline">
+
+                                                        <div class="timeline-item">
+                                                            <span class="date"> 09/2022 - Present </span>
+                                                            <h4>Software Developer Intern- <span>Aapliweb
+                                                                </span></h4>
+                                                            <p>The Aapliweb is the digital marketing Agency in Jalgaon
+                                                                providing web
+                                                                development and all other digital activities.</p>
+                                                        </div>
+                                                        <div class="timeline-item">
+                                                            <span class="date">1 day </span>
+                                                            <h4>Microsoft AI Classroom Seminar - <span>Futureskill
+                                                                    Prime</span></h4>
+                                                            <p>This is a one day training course on Microsoft Azure,
+                                                                here we learn
+                                                                how
+                                                                to make chat bot and deploy it on telegram</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Experience End -->
+                                                <div class="d-flex">
+                                                    <a href="assets/doc/resume.pdf" class="btn btn-glow">resume</a>
+                                                    <a href="#contact" data-mdb-target="#carouselExampleTouch"
+                                                        data-mdb-slide-to="3" aria-label="Slide 4"
+                                                        onclick="Display('ContactBtn', '4')"
+                                                        class="btn btn-glow">contact me</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </section>
+                                </div>
+
+
+                                <!-- Work -->
+                                <div class="carousel-item">
+                                    <section id="Work" class="slide3 about-section sec-padding  animate__animated">
+                                        <div class="row">
+                                            <div class="section-title">
+                                                <h1 class="text-center">recent work</h1>
+                                            </div>
+                                        </div>
+
+                                        <div class="row custom-scroll"
+                                            style="overflow-y:scroll; overflow-x:hidden; height:540px;">
+                                            <div class="col-md-4">
+                                                <div class="scicard mt-4 mb-4">
+                                                    <div class="bg">
+                                                        <div class="content">
+                                                            <div class="bg-image img-border">
+                                                                <img src="assets/img/portfolio/1.jpg"
+                                                                    class="img-fluid rounded" />
+                                                                <a href="#!">
+                                                                    <div class="mask"
+                                                                        style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <h1 class="sciheading">Desktop Voice Assistant
+                                                            </h1>
+                                                            <p class="info">This is a virtual Assistant project
+                                                                developed to overcome the Microsoft Cortana</p>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <a href="https://github.com/digambar2002/desktop-voice-assistant"
+                                                                class="btn btn-glow card-btn text-center mb-4">View
+                                                                Project</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="scicard mt-4 mb-4">
+                                                    <div class="bg">
+                                                        <div class="content">
+                                                            <div class="bg-image img-border">
+                                                                <img src="assets/img/portfolio/2.png"
+                                                                    class="img-fluid rounded" />
+                                                                <a href="#!">
+                                                                    <div class="mask"
+                                                                        style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <h1 class="sciheading">Lecture Ready Extention
+                                                            </h1>
+                                                            <p class="info">This is a best extension for working
+                                                                professional or college student who join daily meeting
+                                                                for work or lecture.</p>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <a href="https://github.com/digambar2002/Lecture-Ready"
+                                                                class="btn btn-glow card-btn text-center mb-4">View
+                                                                Project</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="scicard mt-4 mb-4">
+                                                    <div class="bg">
+                                                        <div class="content">
+                                                            <div class="bg-image img-border">
+                                                                <img src="assets/img/portfolio/3.png"
+                                                                    class="img-fluid rounded" />
+                                                                <a href="#!">
+                                                                    <div class="mask"
+                                                                        style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <h1 class="sciheading">Net Banking System
+                                                            </h1>
+                                                            <p class="info">In this project I have develop real world
+                                                                net-banking project. This project is a best simulator
+                                                                for banking learners</p>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <a href="https://github.com/digambar2002/NetBanking-System-in-PHP"
+                                                                class="btn btn-glow card-btn text-center mb-4">View
+                                                                Project</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="scicard mt-4 mb-4">
+                                                    <div class="bg">
+                                                        <div class="content">
+                                                            <div class="bg-image img-border">
+                                                                <img src="assets/img/portfolio/4.png"
+                                                                    class="img-fluid rounded" />
+                                                                <a href="#!">
+                                                                    <div class="mask"
+                                                                        style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <h1 class="sciheading">Productivity Extention
+                                                            </h1>
+                                                            <p class="info">By using this extension you can hide
+                                                                distracting content like YouTube home page videos to
+                                                                increase Productivity.</p>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <a href="https://github.com/digambar2002/Be-Productive"
+                                                                class="btn btn-glow card-btn text-center mb-4">View
+                                                                Project</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4">
+                                                <div class="scicard mt-4 mb-4">
+                                                    <div class="bg">
+                                                        <div class="content">
+                                                            <div class="bg-image img-border">
+                                                                <img src="assets/img/portfolio/5.jpg"
+                                                                    class="img-fluid rounded" />
+                                                                <a href="#!">
+                                                                    <div class="mask"
+                                                                        style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <h1 class="sciheading">Banking Desktop App
+                                                            </h1>
+                                                            <p class="info">This is a mini net banking project developed
+                                                                by me with the help of net beans IDE in java</p>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <a href="https://github.com/digambar2002/Net-Banking-Software"
+                                                                class="btn btn-glow card-btn text-center mb-4">View
+                                                                Project</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="scicard mt-4 mb-4">
+                                                    <div class="bg">
+                                                        <div class="content">
+                                                            <div class="bg-image img-border">
+                                                                <img src="assets/img/portfolio/6.jpeg"
+                                                                    class="img-fluid rounded" />
+                                                                <a href="#!">
+                                                                    <div class="mask"
+                                                                        style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <h1 class="sciheading">Store Website
+                                                            </h1>
+                                                            <p class="info">This is a simple bakery store website design
+                                                                just using html, css, and javascript. Here user can
+                                                                place order and he/she get emails </p>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <a href="https://github.com/digambar2002/SweetBakery/"
+                                                                class="btn btn-glow card-btn text-center mb-4">View
+                                                                Project</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </section>
+                                </div>
+
+
+                                <!-- Contact Us -->
+                                <div class="carousel-item">
+                                    <section id="Work" class="slide3 about-section sec-padding  animate__animated">
+                                        <div class="row">
+                                            <div class="section-title">
+                                                <h1 class="text-center">Contact Us</h1>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="contact-form">
+                                                    <form action="">
+                                                        <div class="row">
+                                                            <div class="input-group">
+                                                                <input type="text" placeholder="Name"
+                                                                    class="input-control" required>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <input type="email" placeholder="Email"
+                                                                    class="input-control" required>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <input type="text" placeholder="Subject"
+                                                                    class="input-control" required>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <textarea placeholder="Message"
+                                                                    class="input-control"></textarea>
+                                                            </div>
+
+                                                            <div class="submit-btn mb-4">
+                                                                <button type="submit" class="btn btn-glow ripple">Send
+                                                                    Message</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="contact-info">
+                                                    <div class="contact-info-item">
+                                                        <h3>Email</h3>
+                                                        <p>digambarchaudhari425303@gmail.com</p>
+                                                    </div>
+                                                    <div class="contact-info-item">
+                                                        <h3>Phone</h3>
+                                                        <p>+91 7620464305</p>
+                                                    </div>
+                                                    <div class="contact-info-item">
+                                                        <h3 class="social-icons">Follow me</h3>
+                                                        <div class="social-icons">
+                                                            <a href="https://github.com/digambar2002">
+                                                                <div class="social-links ripple btn-glow">
+                                                                    <i class="fa-brands fa-github"></i>
+                                                                </div>
+                                                            </a>
+                                                            <a href="https://www.linkedin.com/in/digambar2002/">
+                                                                <div class="social-links ripple btn-glow">
+                                                                    <i class="fa-brands fa-linkedin"></i>
+                                                                </div>
+                                                            </a>
+                                                            <a href="https://www.instagram.com/digambar4u/">
+                                                                <div class="social-links ripple btn-glow">
+                                                                    <i class="fa-brands fa-instagram"></i>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <!-- <div class="social-links">
+                                                            <i class="bi bi-facebook"></i>
+                                                        </div>
+                                                        <div class="social-links">
+                                                            <i class="bi bi-twitter"></i>
+                                                        </div> -->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="navigation text-center fixed-bottom mb-4">
+                            <ul>
+                                <li id="HomeBtn" class="li-glow li-btn" data-mdb-target="#carouselExampleTouch"
+                                    data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"
+                                    onclick="Display(this.id,'1')"></li>
+
+                                <li id="AboutBtn" class="li-btn" data-mdb-target="#carouselExampleTouch"
+                                    data-mdb-slide-to="1" aria-label="Slide 2" onclick="Display(this.id,'2')"></li>
+
+                                <li id="WorkBtn" class="li-btn" data-mdb-target="#carouselExampleTouch"
+                                    data-mdb-slide-to="2" aria-label="Slide 3" onclick="Display(this.id, '3')"></li>
+
+                                <li id="ContactBtn" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="3"
+                                    aria-label="Slide 4" class="li-btn" onclick="Display(this.id, '4')"></li>
+                                <!-- <li id=""></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="module" src="assets/vendores/numbers/script.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Profile Vendore -->
+    <script src="assets/vendores/profile/script.js"></script>
+    <!-- Profile Vendore -->
+</body>
+
+</html>
+
+
+
+<!-- Important -->
+
+
+<!-- <div class="col-6 border">
+    <div class="d-flex align-items-center  justify-content-center">
+
+        <div>
+            <div id="logo">
+                <img style="height: 252px;"
+                    src="https://www.directive.com/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg"
+                    alt="">
+            </div>
+
+            <div id="circle1">
+                <div id="inner-cirlce1">
+
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div> -->
+
+
+<!-- Important -->
