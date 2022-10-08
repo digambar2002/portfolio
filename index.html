@@ -40,7 +40,7 @@
 
                 <div class="container">
 
-                    <div class="row id-card mt-4 mycard animate__animated animate__zoomIn  align-items-center  justify-content-center"
+                    <div id="MainCard" class="row id-card mt-4 mycard animate__animated animate__zoomIn  align-items-center  justify-content-center"
                         style="height: 90vh;">
 
 
@@ -213,11 +213,12 @@
 
                                                 <!-- Experience End -->
                                                 <div class="d-flex">
-                                                    <a href="assets/doc/resume.pdf" class="btn btn-glow">resume</a>
-                                                    <a href="#contact" data-mdb-target="#carouselExampleTouch"
-                                                        data-mdb-slide-to="3" aria-label="Slide 4"
-                                                        onclick="Display('ContactBtn', '4')"
-                                                        class="btn btn-glow">contact me</a>
+                                                    <a role="button" href="assets/doc/resume.pdf"
+                                                        class="btn btn-glow mt-2"> Resume
+                                                    </a>
+                                                    &nbsp;
+                                                    <a class="btn btn-glow mt-2" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="3"
+                                                    aria-label="Slide 4" onclick="Display('ContactBtn', '4')">Contact</a>
                                                 </div>
 
                                             </div>
@@ -425,11 +426,11 @@
                                     <section id="Work" class="slide3 about-section sec-padding  animate__animated">
                                         <div class="row">
                                             <div class="section-title">
-                                                <h1 class="text-center">Contact Us</h1>
+                                                <h1 class="text-center mb-4">Contact Us</h1>
                                             </div>
                                         </div>
 
-                                        <div class="row">
+                                        <div class="row mt-4 custom-scroll" style="overflow-y:scroll; overflow-x:hidden; height:480px;">
                                             <div class="col-md-6">
                                                 <div class="contact-form">
                                                     <form action="">

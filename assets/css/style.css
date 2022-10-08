@@ -799,17 +799,25 @@ li {
     }
 
     .contact-info-item h3 {
+        margin-top: 20px;
         font-size: 14px;
-
+        text-align: center;
     }
 
     .contact-info-item p {
         font-size: 12px;
-
+        text-align: center;
     }
 
     .social-icons {
         text-align: center;
+    }
+    .submit-btn{
+        text-align: center;
+    }
+
+    #MainCard{
+        height: 80vh !important;
     }
 
 }
