@@ -449,12 +449,12 @@ button {
 
 
 /* ---------------------------
- Bottom Navigation Start
+ Bottom TopNavigation Start
  -----------------------------*/
 
 
 
-ul {
+#BottomNav ul {
     margin: auto;
     height: 10px;
     width: 300px;
@@ -469,7 +469,7 @@ ul {
     align-items: center;
 }
 
-li {
+#BottomNav li {
     display: block;
     float: left;
     width: 10px;
@@ -478,16 +478,17 @@ li {
     border-radius: 100%;
 }
 
-.li-glow {
+#BottomNav .li-glow {
     background: rgba(255, 255, 255, 1);
     box-shadow: inset 0px 0px 10px 2px rgba(0, 255, 182, 0.5),
         0px 0px 10px 2px rgba(0, 255, 135, 1);
 
     -webkit-animation: pulse 1s alternate infinite;
     -moz-animation: pulse 1s alternate infinite;
+
 }
 
-li {
+#BottomNav li {
     background: rgba(255, 255, 255, 0.7);
     box-shadow: inset 0px 0px 10px 2px rgba(0, 255, 182, 0.5),
         0px 0px 10px 2px rgba(0, 255, 135, 0.3);
@@ -527,7 +528,7 @@ li {
 
 
 /* ---------------------------
- Bottom Navigation End
+ Bottom TopNavigation End
  -----------------------------*/
 
 
@@ -770,6 +771,111 @@ li {
 
 
 
+/* ------------------------------------
+Top TopNavigation Section Start
+---------------------------------------*/
+
+.TopNav,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopNav {
+    position: absolute;
+    background-color: #0a21297c;
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.TopNav input:checked~.menu {
+    width: 330px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--cyan-dark);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: var(--cyan-light);
+}
+
+.TopNav input {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.TopNav span {
+    position: absolute;
+    left: 15px;
+    width: 15px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.TopNav input:checked~span {
+    background-color: #f974a1;
+}
+
+.TopNav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.TopNav input:checked~span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.TopNav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.TopNav input:checked~span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.main-nav {
+    position: relative;
+    margin-top: -30px;
+    margin-left: -20px;
+}
+
+.active-nav{
+    color: var(--main-color) !important;
+}
+
+/* ------------------------------------
+Top TopNavigation Section End
+---------------------------------------*/
+
+
+
 
 
 
@@ -830,8 +936,41 @@ li {
         margin-top: 20px;
         font-size: 20px !important;
     }
-    .img-border{
+
+    .img-border {
         border-radius: 0px 50px 0px 50px;
+    }
+
+    #CarouselRow {
+        height: 60vh !important;
+    }
+
+    .abountInfo {
+        height: 400px !important;
+    }
+
+    .about-tabs .tab-item {
+        font-size: 18px;
+        margin: 0 30px 0 0;
+        ;
+    }
+    .about-text .btn {
+        margin: 0px 0px 10px 0px !important;
+    }
+    .HomeBtn{
+        font-size: 14px !important;
+    }
+    .WorkSection{
+        height: 390px !important;
+    }
+
+    .TopNav input:checked~.menu {
+        width: 250px;
+    }
+    .menu li {
+        list-style: none;
+        margin: 0 5px;
+        font-size: 14px;
     }
 
 }

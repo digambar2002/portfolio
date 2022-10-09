@@ -71,11 +71,11 @@ $(document).ready(function () {
 
 function Display(id, slideNo) {
 
-  $("#HomeBtn").removeClass("li-glow");
-  $("#AboutBtn").removeClass("li-glow");
-  $("#WorkBtn").removeClass("li-glow");
-  $("#ContactBtn").removeClass("li-glow");
-  $("#" + id).addClass("li-glow");
+  $(".HomeBtn").removeClass("li-glow active-nav");
+  $(".AboutBtn").removeClass("li-glow active-nav");
+  $(".WorkBtn").removeClass("li-glow active-nav");
+  $(".ContactBtn").removeClass("li-glow active-nav");
+  $("." + id).addClass("li-glow active-nav");
 }
 
 
