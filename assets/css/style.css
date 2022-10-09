@@ -964,6 +964,10 @@ Top TopNavigation Section End
         height: 390px !important;
     }
 
+    .ContactSection{
+        height: 440px !important;
+    }
+
     .TopNav input:checked~.menu {
         width: 250px;
     }
