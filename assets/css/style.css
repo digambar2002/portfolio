@@ -54,10 +54,35 @@ body {
     outline: none;
 }
 
-/* .mask-custom {
-    backdrop-filter: blur(1px);
-    background-color: rgba(0, 0, 0, 0.25);
-  } */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
 
 .dg {
     display: none;
@@ -866,7 +891,7 @@ Top TopNavigation Section Start
     margin-left: -20px;
 }
 
-.active-nav{
+.active-nav {
     color: var(--main-color) !important;
 }
 
@@ -954,27 +979,37 @@ Top TopNavigation Section End
         margin: 0 30px 0 0;
         ;
     }
+
     .about-text .btn {
         margin: 0px 0px 10px 0px !important;
     }
-    .HomeBtn{
+
+    .HomeBtn {
         font-size: 14px !important;
     }
-    .WorkSection{
+
+    .WorkSection {
         height: 390px !important;
     }
 
-    .ContactSection{
+    .ContactSection {
         height: 390px !important;
     }
 
     .TopNav input:checked~.menu {
         width: 250px;
     }
+
     .menu li {
         list-style: none;
         margin: 0 5px;
         font-size: 14px;
     }
 
+}
+
+#starfield {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
