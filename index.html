@@ -44,44 +44,42 @@
         <div class="container-fluid">
             <div class="mask mask-custom">
 
-                <div class="container">
+                <div class="">
 
-                    <div id="MainCard"
-                        class="row id-card mt-4 mycard animate__animated animate__zoomIn  align-items-center  justify-content-center"
-                        style="height: 90vh;">
+                    <div id="MainCard mt-md-5"
+                        class="row id-card mycard animate__animated animate__zoomIn  align-items-center  justify-content-center"
+                        style="height: 100vh;">
 
 
-                        <div class="row">
-                            <div class="col-md-1">
+                        <div class="row mt-5 mb-5">
 
-                                <div class="main-nav fixed-Top">
-                                    <div class="TopNav ">
-                                        <input type="checkbox">
-                                        <span></span>
-                                        <span></span>
-                                        <div class="menu">
-                                            <li><a role="button" data-mdb-target="#carouselExampleTouch"
-                                                    data-mdb-slide-to="0" class="active-nav HomeBtn" aria-current="true"
-                                                    aria-label="Slide 1" onclick="Display('HomeBtn','1')">home</a></li>
-                                            <li><a role="button" class="li-btn AboutBtn"
-                                                    data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="1"
-                                                    aria-label="Slide 2" onclick="Display('AboutBtn','2')">about</a>
-                                            </li>
-                                            <li><a role="button" class="li-btn WorkBtn"
-                                                    data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="2"
-                                                    aria-label="Slide 3" onclick="Display('WorkBtn', '3')">Work</a>
-                                            </li>
-                                            <li><a role="button" data-mdb-target="#carouselExampleTouch"
-                                                    data-mdb-slide-to="3" aria-label="Slide 4" class="li-btn ContactBtn"
-                                                    onclick="Display('ContactBtn', '4')">Contact</a></li>
-                                        </div>
-                                    </div>
+
+                            <div class="main-nav fixed-Top">
+
+
+                                <div class="menu d-flex justify-content-end">
+                                    <li><a role="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="0"
+                                            class="active-nav HomeBtn" aria-current="true" aria-label="Slide 1"
+                                            onclick="Display('HomeBtn','1')">home</a></li>
+                                    <li><a role="button" class="li-btn AboutBtn" data-mdb-target="#carouselExampleTouch"
+                                            data-mdb-slide-to="1" aria-label="Slide 2"
+                                            onclick="Display('AboutBtn','2')">about</a>
+                                    </li>
+                                    <li><a role="button" class="li-btn WorkBtn" data-mdb-target="#carouselExampleTouch"
+                                            data-mdb-slide-to="2" aria-label="Slide 3"
+                                            onclick="Display('WorkBtn', '3')">Work</a>
+                                    </li>
+                                    <li><a role="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide-to="3"
+                                            aria-label="Slide 4" class="li-btn ContactBtn"
+                                            onclick="Display('ContactBtn', '4')">Contact</a></li>
                                 </div>
+
                             </div>
-                            <div class="col-md-11"></div>
+
+
                         </div>
 
-                        <div id="CarouselRow" class="row" style="height: 70vh;">
+                        <div id="CarouselRow mt-md-5" class="row" style="height: 100vh;">
                             <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
                                 <div class="carousel-inner">
 
@@ -112,7 +110,7 @@
                                                                                 data-mdb-slide-to="1"
                                                                                 aria-label="Slide 2"
                                                                                 onclick="Display('AboutBtn','2')"
-                                                                                class="btn btn-glow mt-2 HomeBtn">About
+                                                                                class="btn btn-glow mt-2 ">About
                                                                                 Me</button>
                                                                             &nbsp;
                                                                             <button
@@ -120,7 +118,7 @@
                                                                                 data-mdb-slide-to="2"
                                                                                 aria-label="Slide 3"
                                                                                 onclick="Display('WorkBtn', '3')"
-                                                                                class="btn btn-glow mt-2 HomeBtn">Portfolio</button>
+                                                                                class="btn btn-glow mt-2 ">Portfolio</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -174,16 +172,18 @@
 
                                                     <h3>skills</h3>
                                                     <div class="skills">
-                                                        <div class="skill-item ripple">html</div>
-                                                        <div class="skill-item ripple">css</div>
-                                                        <div class="skill-item ripple">javascript</div>
+
                                                         <div class="skill-item ripple">python</div>
-                                                        <div class="skill-item ripple">c</div>
-                                                        <div class="skill-item ripple">c++</div>
-                                                        <div class="skill-item ripple">php</div>
                                                         <div class="skill-item ripple">java</div>
+                                                        <div class="skill-item ripple">php</div>
+                                                        <div class="skill-item ripple">c++</div>
+                                                        <div class="skill-item ripple">c</div>
+                                                        <div class="skill-item ripple">javascript</div>
+                                                        <div class="skill-item ripple">react js</div>
                                                         <div class="skill-item ripple">flutter</div>
                                                         <div class="skill-item ripple">android</div>
+                                                        <div class="skill-item ripple">html</div>
+                                                        <div class="skill-item ripple">css</div>
                                                     </div>
 
 
@@ -294,15 +294,67 @@
                                     <!-- Work -->
                                     <div class="carousel-item">
                                         <section id="Work" class="slide3 about-section sec-padding  animate__animated">
-                                            <div class="row">
-                                                <div class="section-title">
-                                                    <h1 class="text-center">recent work</h1>
-                                                </div>
-                                            </div>
+
+                                            <h1 class="text-center mb-md-5">recent work</h1>
+
 
                                             <div class="row custom-scroll WorkSection"
                                                 style="overflow-y:scroll; overflow-x:hidden; height:500px;">
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
+                                                    <div class="scicard mt-4 mb-4">
+                                                        <div class="bg">
+                                                            <div class="content">
+                                                                <div class="bg-image img-border">
+                                                                    <img src="assets/img/portfolio/feednjoy.jpg"
+                                                                        class="img-fluid rounded" />
+                                                                    <a href="#!">
+                                                                        <div class="mask"
+                                                                            style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <h1 class="sciheading">FeedNJoy
+                                                                </h1>
+
+
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="https://github.com/digambar2002/feed_food"
+                                                                    class="btn btn-glow card-btn text-center mb-4">View
+                                                                    Project</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="scicard mt-4 mb-4">
+                                                        <div class="bg">
+                                                            <div class="content">
+                                                                <div class="bg-image img-border">
+                                                                    <img src="assets/img/portfolio/pregcare.jpg"
+                                                                        class="img-fluid rounded" />
+                                                                    <a href="#!">
+                                                                        <div class="mask"
+                                                                            style="background-color: rgba(57, 192, 237, 0.2);">
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <h1 class="sciheading">Pregcare
+                                                                </h1>
+
+
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center">
+                                                                <a href="https://github.com/digambar2002/pregcare"
+                                                                    class="btn btn-glow card-btn text-center mb-4">View
+                                                                    Project</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
                                                     <div class="scicard mt-4 mb-4">
                                                         <div class="bg">
                                                             <div class="content">
@@ -315,10 +367,9 @@
                                                                         </div>
                                                                     </a>
                                                                 </div>
-                                                                <h1 class="sciheading">Desktop Voice Assistant
+                                                                <h1 class="sciheading">Voice Assistant
                                                                 </h1>
-                                                                <p class="info">This is a virtual Assistant project
-                                                                    developed to overcome the Microsoft Cortana</p>
+
 
                                                             </div>
                                                             <div
@@ -331,7 +382,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="scicard mt-4 mb-4">
                                                         <div class="bg">
                                                             <div class="content">
@@ -344,12 +395,9 @@
                                                                         </div>
                                                                     </a>
                                                                 </div>
-                                                                <h1 class="sciheading">Lecture Ready Extention
+                                                                <h1 class="sciheading">Lecture Ready
                                                                 </h1>
-                                                                <p class="info">This is a best extension for working
-                                                                    professional or college student who join daily
-                                                                    meeting
-                                                                    for work or lecture.</p>
+
 
                                                             </div>
                                                             <div
@@ -362,7 +410,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="scicard mt-4 mb-4">
                                                         <div class="bg">
                                                             <div class="content">
@@ -377,11 +425,7 @@
                                                                 </div>
                                                                 <h1 class="sciheading">Net Banking System
                                                                 </h1>
-                                                                <p class="info">In this project I have develop real
-                                                                    world
-                                                                    net-banking project. This project is a best
-                                                                    simulator
-                                                                    for banking learners</p>
+
 
                                                             </div>
                                                             <div
@@ -394,7 +438,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="scicard mt-4 mb-4">
                                                         <div class="bg">
                                                             <div class="content">
@@ -409,10 +453,6 @@
                                                                 </div>
                                                                 <h1 class="sciheading">Productivity Extention
                                                                 </h1>
-                                                                <p class="info">By using this extension you can hide
-                                                                    distracting content like YouTube home page
-                                                                    videos to
-                                                                    increase Productivity.</p>
 
                                                             </div>
                                                             <div
@@ -426,7 +466,7 @@
                                                 </div>
 
 
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="scicard mt-4 mb-4">
                                                         <div class="bg">
                                                             <div class="content">
@@ -441,9 +481,7 @@
                                                                 </div>
                                                                 <h1 class="sciheading">Banking Desktop App
                                                                 </h1>
-                                                                <p class="info">This is a mini net banking project
-                                                                    developed
-                                                                    by me with the help of net beans IDE in java</p>
+
 
                                                             </div>
                                                             <div
@@ -456,7 +494,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-4">
+                                                <div class="col-md-3">
                                                     <div class="scicard mt-4 mb-4">
                                                         <div class="bg">
                                                             <div class="content">
@@ -471,12 +509,7 @@
                                                                 </div>
                                                                 <h1 class="sciheading">Store Website
                                                                 </h1>
-                                                                <p class="info">This is a simple bakery store
-                                                                    website
-                                                                    design
-                                                                    just using html, css, and javascript. Here user
-                                                                    can
-                                                                    place order and he/she get emails </p>
+
 
                                                             </div>
                                                             <div
@@ -588,7 +621,7 @@
                         </div>
 
 
-                        <div id="BottomNav" class="navigation text-center fixed-bottom mb-4">
+                        <div id="BottomNav" class="navigation text-center fixed-bottom mb-4" hidden>
                             <ul>
                                 <li id="HomeBtn" class="li-glow li-btn  HomeBtn" data-mdb-target="#carouselExampleTouch"
                                     data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"

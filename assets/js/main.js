@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     $("#loader").attr("hidden", true);
     $("#main").attr("hidden", false);
-  }, 3000);
+  }, 500);
 
 
 

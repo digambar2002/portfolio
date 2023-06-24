@@ -145,7 +145,7 @@ button {
     padding: 11px 28px;
     display: inline-block;
     border-radius: 30px;
-    color: var(--main-color);
+    color: var(--white);
     font-weight: 500;
     text-transform: capitalize;
     font-family: inherit;
@@ -180,6 +180,9 @@ button {
     color: var(--white);
 }
 
+#type-text{
+    color: cyan;
+}
 
 
 
@@ -209,7 +212,7 @@ button {
 #loader {
     /* Uncomment this to make it run! */
     /*
-       animation: loader 5s linear infinite; 
+       animation: loader 5s linear infinite; /
     */
 
     position: absolute;
@@ -580,7 +583,8 @@ button {
     /* position: absolute; */
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    /* clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%); */
+    border-radius: 10px;
     background: #5af5ff21;
 }
 
@@ -591,7 +595,7 @@ button {
 } */
 
 .card-btn {
-    border-radius: 20px 0px 20px 0px;
+    border-radius: 2px 2px 2px 2px;
 }
 
 .bg::before {
@@ -601,7 +605,7 @@ button {
     left: 50%;
     width: calc(100% - 5px);
     height: calc(100% - 6px);
-    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%);
+    /* clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 15% 100%, 0 85%); */
     background: linear-gradient(180deg, rgba(0, 255, 209, 0.098) 0%, rgba(123, 247, 255, 0.03) 100%), #0C0C0C;
 }
 
@@ -670,7 +674,7 @@ button {
 
 .img-border {
     border: 2px solid var(--main-color);
-    border-radius: 0px 70px 0px 70px;
+    border-radius: 10px;
 }
 
 
@@ -804,14 +808,14 @@ Top TopNavigation Section Start
 .menu {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .TopNav {
-    position: absolute;
-    background-color: #0a21297c;
+
+    /* background-color: #0a21297c; */
     padding: 10px;
-    border: 1px solid var(--main-color);
+    /* border: 1px solid var(--main-color); */
     transition: 0.5s;
     border-radius: 50px;
     overflow: hidden;
@@ -821,7 +825,7 @@ Top TopNavigation Section Start
 .menu {
     margin: 0;
     padding: 0;
-    width: 0;
+    width: 100%;
     overflow: hidden;
     transition: 0.5s;
 }
@@ -893,6 +897,7 @@ Top TopNavigation Section Start
 
 .active-nav {
     color: var(--main-color) !important;
+    
 }
 
 /* ------------------------------------
@@ -954,7 +959,7 @@ Top TopNavigation Section End
     }
 
     #MainCard {
-        height: 80vh !important;
+        height: 100vh !important;
     }
 
     .sciheading {
@@ -963,11 +968,11 @@ Top TopNavigation Section End
     }
 
     .img-border {
-        border-radius: 0px 50px 0px 50px;
+        border-radius: 10px;
     }
 
     #CarouselRow {
-        height: 60vh !important;
+        height: 70vh !important;
     }
 
     .abountInfo {
