@@ -63,9 +63,6 @@ $(document).ready(function () {
     $("#main").attr("hidden", false);
   }, 500);
 
-
-
-
 });
 
 
@@ -77,6 +74,8 @@ function Display(id, slideNo) {
   $(".ContactBtn").removeClass("li-glow active-nav");
   $("." + id).addClass("li-glow active-nav");
 }
+
+
 
 
 /* ----------------- About Tabs ------------------ */
